@@ -32,6 +32,14 @@ Abre el archivo `index.html` en tu navegador web. No requiere instalación de de
 
 ## Comandos de Git
 
+### `git config --global user.name`
+
+Consulta el nombre de autor configurado globalmente en Git. Para establecerlo, añade el nombre entre comillas, por ejemplo: `git config --global user.name "Tu Nombre"`.
+
+### `git config --global user.email`
+
+Consulta el correo electrónico de autor configurado globalmente en Git. Para cambiarlo, usa un correo entre comillas, por ejemplo: `git config --global user.email "tu-correo@ejemplo.com"`.
+
 ### `git init`
 
 Inicializa un repositorio de Git en la carpeta actual. Git empieza a registrar el historial de cambios del proyecto.
@@ -51,6 +59,10 @@ Agrega todos los archivos nuevos y las modificaciones de la carpeta actual al á
 ### `git commit -m 'Your commit message here!'`
 
 Guarda los cambios que están en el área de preparación en el historial local de Git. Reemplaza el texto entre comillas por un mensaje breve y descriptivo, por ejemplo: `git commit -m "Agrega página informativa de Codedex"`.
+
+### `git commit --amend --reset-author`
+
+Reemplaza el último commit local y actualiza su autor con el nombre y correo configurados actualmente en Git. Normalmente abre el editor para conservar o modificar el mensaje del commit. Úsalo antes de enviar ese commit al repositorio remoto; si ya fue publicado, reescribirás su historial y necesitarás coordinarlo con el equipo.
 
 ### `git status`
 
